@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pacientes",
+  "info": {
+    "name": "paciente"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "apellidoPaterno": {
+      "type": "string"
+    },
+    "fechaNacimiento": {
+      "type": "date"
+    },
+    "genero": {
+      "type": "enumeration",
+      "enum": [
+        "Masculino",
+        "Femenino"
+      ]
+    },
+    "idFederador": {
+      "type": "string"
+    },
+    "dni": {
+      "type": "biginteger"
+    }
+  }
+}

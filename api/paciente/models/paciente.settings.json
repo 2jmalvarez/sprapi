@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "pacientes",
   "info": {
-    "name": "paciente"
+    "name": "paciente",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -32,8 +33,14 @@
     "idFederador": {
       "type": "string"
     },
+    "documentos_clinicos": {
+      "collection": "documentos-clinicos",
+      "via": "paciente"
+    },
     "dni": {
-      "type": "biginteger"
+      "type": "string"
+
+      
     }
   }
 }

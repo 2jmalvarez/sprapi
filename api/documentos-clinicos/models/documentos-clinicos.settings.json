@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documentos_clinicos",
+  "info": {
+    "name": "Documentos Clinicos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "paciente": {
+      "via": "documentos_clinicos",
+      "model": "paciente"
+    },
+    "DNI": {
+      "type": "string",
+      "required": true
+    },
+    "Fecha": {
+      "type": "date"
+    },
+    "Valido": {
+      "type": "boolean"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "Tipo": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/documentos-clinicos/:dni",
+      "handler": "documentos-clinicos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentos-clinicos/count",
+      "handler": "documentos-clinicos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/documentos-clinicos/:id",
+      "handler": "documentos-clinicos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/documentos-clinicos",
+      "handler": "documentos-clinicos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/documentos-clinicos/:id",
+      "handler": "documentos-clinicos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/documentos-clinicos/:id",
+      "handler": "documentos-clinicos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

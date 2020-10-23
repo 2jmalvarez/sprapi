@@ -13,7 +13,7 @@ module.exports = {
     async find(ctx){
         const pacientes = await strapi.services.paciente.find(ctx.query)
 
-        const { data } = await axios.get('http://192.168.0.95:4500/api/users');
+        // const { data } = await axios.get('http://192.168.0.95:4500/api/users');
         // let random = (Math.random()* (data.length-1)).toFixed(0)
         
         // const idFederadorPonele = data.filter(b=> b.id == random)[0]['phone']//data[random].phone
